@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Header />
+    <Backdrop />
     <router-view />
+    <Sidemenu />
     <Footer />
   </div>
 </template>
@@ -9,12 +11,16 @@
 <script>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
+import Sidemenu from "@/components/Sidemenu.vue";
+import Backdrop from "@/components/Backdrop.vue";
 export default {
   name: "app",
   components: {
     Header,
     Footer,
-  },
+    Sidemenu,
+    Backdrop
+  }
 };
 </script>
 

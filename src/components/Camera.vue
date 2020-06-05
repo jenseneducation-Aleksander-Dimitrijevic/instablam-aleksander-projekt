@@ -30,6 +30,9 @@
 <script>
 export default {
   name: "camera",
+  mounted() {
+    this.$root.$on("start-camera", this.getMedia);
+  },
   data() {
     return {
       stream: null,
